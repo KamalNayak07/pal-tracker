@@ -19,7 +19,7 @@ jobs:
         - git config --local user.email "travis@example.com"
         - git tag -f $RELEASE_TAG
       deploy:
-        provider: releases
+        provider: lab3
         api_key: $GITHUB_OAUTH_TOKEN
         file: "build/libs/pal-tracker.jar"
         skip_cleanup: true
